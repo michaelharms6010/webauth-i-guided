@@ -10,4 +10,8 @@ router.get('/', (req, res) => {
   res.json({ api: "It's alive" });
 });
 
+router.get("/hash", (req,res => {
+  res.json(req.body);
+}))
+
 module.exports = router;
